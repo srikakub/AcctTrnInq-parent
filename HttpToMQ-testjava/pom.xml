@@ -33,7 +33,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.anz.api</groupId>
-			<artifactId>HttpToMQ-Java</artifactId>
+			<artifactId>HttpToMQ-java</artifactId>
 			<version>0.0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

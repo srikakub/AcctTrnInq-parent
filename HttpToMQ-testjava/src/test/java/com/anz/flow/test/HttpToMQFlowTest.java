@@ -57,7 +57,7 @@ public class HttpToMQFlowTest extends FlowTest {
 	ObjectMapper objectMapper = new ObjectMapper();
 
 	private static final String TEST_FILE_001 = "HttpToMQ.Test001.xml";
-	private static final String applicationName = "HttpToMQ-App";
+	private static final String applicationName = "HttpToMQ-app";
 	private static final String flowName = "Main";
 	private static final String injectNodeName = "HTTP Input";
 	private static final String MESSAGE_FORMAT = "MessageFormat.xml";
