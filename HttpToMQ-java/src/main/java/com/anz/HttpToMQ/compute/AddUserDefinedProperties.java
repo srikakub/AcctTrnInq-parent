@@ -32,15 +32,22 @@ public class AddUserDefinedProperties extends CommonJavaCompute {
 	public void execute(MbMessageAssembly inAssembly,
 			MbMessageAssembly outAssembly) throws Exception {
 		
+		// Set message ID and Correlation ID to LocalEnvironement/Destination/HTTP/RequestIdentifier
+		MbElement msgId = outAssembly.getMessage().getRootElement().getFirstElementByPath("/MQMD/MsgId");
+		MbElement correlId = outAssembly.getMessage().getRootElement().getFirstElementByPath("/MQMD/CorrelId");
+				
+		msgId.setValue(outAssembly.getLocalEnvironment().getRootElement().getFirstElementByPath("/Destination/HTTP/RequestIdentifier").getValue());
+		correlId.setValue(msgId.getValue());
+		
+		
 		// Set ReplyToQ MQMD field to the UDP replyQueue
 		MbElement replyToQ = outAssembly.getMessage().getRootElement().getFirstElementByPath("/MQMD/ReplyToQ");
 		replyToQ.setValue((String) getUserDefinedAttribute("replyQueue"));
 		logger.info("{} = {}", replyToQ.getName(), replyToQ.getValueAsString());
 		
 		// Set the Local Environment MQ output queue parameter to the UDP providerQueue
-		MbElement providerQ = outAssembly.getLocalEnvironment().getRootElement()
-				.createElementAsFirstChild(MbElement.TYPE_NAME_VALUE, "Destination", "")
-				.createElementAsFirstChild(MbElement.TYPE_NAME_VALUE, "MQ", "")
+		MbElement providerQ = outAssembly.getLocalEnvironment().getRootElement().getFirstElementByPath("/Destination")
+				.createElementAsLastChild(MbElement.TYPE_NAME_VALUE, "MQ", "")
 				.createElementAsFirstChild(MbElement.TYPE_NAME_VALUE, "DestinationData", "")
 				.createElementAsFirstChild(MbElement.TYPE_NAME_VALUE, "queueName", getUserDefinedAttribute("providerQueue"));
 		logger.info("{} = {}", providerQ.getName(), providerQ.getValueAsString());	
