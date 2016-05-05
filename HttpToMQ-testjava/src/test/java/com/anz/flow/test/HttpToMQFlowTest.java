@@ -60,7 +60,8 @@ public class HttpToMQFlowTest extends FlowTest {
 	private static final String applicationName = "HttpToMQ-app";
 	private static final String flowName = "Main";
 	private static final String injectNodeName = "HTTP Input";
-	private static final String MESSAGE_FORMAT = "MessageFormat.xml";
+	//private static final String MESSAGE_FORMAT = "MessageFormat.xml";
+	private static final String MESSAGE_FORMAT = "NewMessageFormat.xml";
 	
 	@Override
 	@Before
@@ -133,10 +134,12 @@ public class HttpToMQFlowTest extends FlowTest {
 	public void testPostTransformNodeOutput() throws ConfigManagerProxyPropertyNotInitializedException, XPathExpressionException, SAXException, IOException, ParserConfigurationException, InterruptedException {	
 		
 		// PreTransform Node
-		List<RecordedTestData> dataList = getTestDataList("Response Transform");
+		//List<RecordedTestData> dataList = getTestDataList("Response Transform");
+		List<RecordedTestData> dataList = getTestDataList("HTTP Reply", true);
 		
 		String json = getNodeOutputJsonStringFromBlob(dataList.get(0));
 		NumbersInput out = gson.fromJson(json, NumbersInput.class);
+		logger.info("left = {}, right = {}", out.getLeft(), out.getRight());
 
 		assertNotNull(out);
 		assertEquals(105, out.getLeft());

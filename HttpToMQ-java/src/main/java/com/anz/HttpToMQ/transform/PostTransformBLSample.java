@@ -21,7 +21,6 @@ import com.anz.common.transform.ITransformer;
 import com.anz.common.transform.TransformUtils;
 
 
-
 /**
  * @author sanketsw
  * 
@@ -36,11 +35,24 @@ public class PostTransformBLSample implements ITransformer<String, String> {
 	public String execute(String inputJson, Logger logger, ComputeInfo metadata) throws Exception {
 		NumbersInput json = (NumbersInput) TransformUtils.fromJSON(inputJson,
 				NumbersInput.class);
-		logger.info("Inside Java Compute");
+		logger.info("Inside Post Transform");
 		
-		//Add left and right
+		//-----------------------------------------------------------------------------------------
+		// User Code Below
+		
+		logger.info("Before transform: left = {}, right = {}", json.getLeft(), json.getRight());
+		
+		//Example: Increase right by 100
 		json.setRight(json.getRight() + 100);
+		
+		logger.info("After transform: left = {}, right = {}", json.getLeft(), json.getRight());
+		
 		String out = TransformUtils.toJSON(json);
+		
+		
+		// End User Code
+		//-----------------------------------------------------------------------------------------
+
 		return out;
 	}
 
