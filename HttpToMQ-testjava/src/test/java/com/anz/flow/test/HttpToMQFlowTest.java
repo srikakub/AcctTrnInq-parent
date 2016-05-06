@@ -60,8 +60,8 @@ public class HttpToMQFlowTest extends FlowTest {
 	private static final String applicationName = "HttpToMQ-app";
 	private static final String flowName = "Main";
 	private static final String injectNodeName = "HTTP Input";
-	//private static final String MESSAGE_FORMAT = "MessageFormat.xml";
-	private static final String MESSAGE_FORMAT = "NewMessageFormat.xml";
+	private static final String MESSAGE_FORMAT = "MessageFormat.xml";
+	//private static final String MESSAGE_FORMAT = "NewMessageFormat.xml";
 	
 	@Override
 	@Before
@@ -84,6 +84,8 @@ public class HttpToMQFlowTest extends FlowTest {
 		String jsonBlob = TransformUtils.getBlob(message);
 		String messageFormat = IOUtils.toString(HttpToMQFlowTest.class.getResourceAsStream(MESSAGE_FORMAT));
 		message = messageFormat.replace("MESSAGE_FORMAT", jsonBlob);
+		
+		logger.info("inject message: \n{}", message);
 		
 		Properties injectProps = new Properties();
 		injectProps.setProperty(AttributeConstants.DATA_INJECTION_APPLICATION_LABEL, applicationName); 		
