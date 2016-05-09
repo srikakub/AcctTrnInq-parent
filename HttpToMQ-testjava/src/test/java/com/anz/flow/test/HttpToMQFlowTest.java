@@ -111,6 +111,10 @@ public class HttpToMQFlowTest extends FlowTest {
 		//Test individual node outputs
 		logger.info("Testing pre transform...");
 		testPreTransformNodeOutput();
+		logger.info("Testing MQ Out");
+		testMQOutputNode();
+		logger.info("Testing MQ Get");
+		testMQGetNode();
 		logger.info("Testing post transform...");
 		testPostTransformNodeOutput();
 		
@@ -132,12 +136,39 @@ public class HttpToMQFlowTest extends FlowTest {
 		
 	}
 	
+	public void testMQOutputNode() throws ConfigManagerProxyPropertyNotInitializedException, XPathExpressionException, SAXException, IOException, ParserConfigurationException {	
+		
+		// PreTransform Node
+		List<RecordedTestData> dataList = getTestDataList("Propagate Request");
+		
+		logger.info("\ndataList: \n{}\n", dataList.toString());
+		
+		String json = getNodeOutputJsonStringFromBlob(dataList.get(0));
+		NumbersInput out = gson.fromJson(json, NumbersInput.class);
+
+		assertNotNull(out);
+		
+		
+	}
+	
+	public void testMQGetNode() throws ConfigManagerProxyPropertyNotInitializedException, XPathExpressionException, SAXException, IOException, ParserConfigurationException {	
+		
+		// PreTransform Node
+		List<RecordedTestData> dataList = getTestDataList("Get Response");
+		
+		String json = getNodeOutputJsonStringFromBlob(dataList.get(0));
+		NumbersInput out = gson.fromJson(json, NumbersInput.class);
+
+		assertNotNull(out);
+		
+	}
+	
 	
 	public void testPostTransformNodeOutput() throws ConfigManagerProxyPropertyNotInitializedException, XPathExpressionException, SAXException, IOException, ParserConfigurationException, InterruptedException {	
 		
 		// PreTransform Node
-		//List<RecordedTestData> dataList = getTestDataList("Response Transform");
-		List<RecordedTestData> dataList = getTestDataList("HTTP Reply", true);
+		List<RecordedTestData> dataList = getTestDataList("Response Transform");
+		//List<RecordedTestData> dataList = getTestDataList("Transform Response", false);
 		
 		String json = getNodeOutputJsonStringFromBlob(dataList.get(0));
 		NumbersInput out = gson.fromJson(json, NumbersInput.class);

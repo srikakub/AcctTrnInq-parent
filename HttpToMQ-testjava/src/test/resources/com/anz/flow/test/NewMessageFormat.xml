@@ -1,11 +1,3 @@
-<localEnvironment xmlns:iib="http://com.ibm.iib/lt/1.0"
-	iib:parser="MQROOT" iib:injectable="true">
-	<Destination>
-		<HTTP>
-			<RequestIdentifier iib:valueType="BLOB">4854545000000000000000007b7e8d807924000000000000</RequestIdentifier>
-		</HTTP>
-	</Destination>
-</localEnvironment>
 <message xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="WSRoot"
 	iib:injectable="true">
 	<Properties iib:parser="WSPROPERTYPARSER">
