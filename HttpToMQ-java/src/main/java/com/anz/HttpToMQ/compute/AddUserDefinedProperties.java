@@ -124,6 +124,10 @@ public class AddUserDefinedProperties extends CommonJavaCompute {
 			// Set the Local Environment MQ output queue parameter to the UDP PROVIDER_QUEUE
 			MbElement providerQ = ComputeUtils.setElementInTree(getUserDefinedAttribute("PROVIDER_QUEUE"), outAssembly.getLocalEnvironment(),"Destination", "MQ","DestinationData","queueName");
 			logger.info("{} = {}", providerQ.getName(), providerQ.getValueAsString());	
+			
+			// Set the Local Environment MQ output queue manager parameter to the UDP PROVIDER_QUEUE_MGR
+			MbElement providerQMgr = ComputeUtils.setElementInTree(getUserDefinedAttribute("PROVIDER_QUEUE_MGR"), outAssembly.getLocalEnvironment(),"Destination", "MQ","DestinationData","queueManagerName");
+			logger.info("{} = {}", providerQMgr.getName(), providerQMgr.getValueAsString());	
 		}
 	 
 

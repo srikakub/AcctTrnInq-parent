@@ -12,6 +12,9 @@
     <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.REPLY_QUEUE_MGR" name="REPLY_QUEUE_MGR" lowerBound="1" defaultValueLiteral="QMGR">
       <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.PROVIDER_QUEUE_MGR" name="PROVIDER_QUEUE_MGR" lowerBound="1" defaultValueLiteral="QMGR">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
     <translation xmi:type="utility:TranslatableString" key="Main" bundleName="Main" pluginId="HttpToMQ-app"/>
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/HttpToMQ-app/icons/full/obj16/Main.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/HttpToMQ-app/icons/full/obj30/Main.gif"/>
@@ -67,6 +70,9 @@
           <propertyName xmi:type="utility:TranslatableString" key="Property.REPLY_QUEUE" bundleName="Main" pluginId="HttpToMQ-app"/>
           <propertyDescriptor groupName="Group.MQ" configurable="true" userDefined="true" describedAttribute="Property.REPLY_QUEUE_MGR">
             <propertyName xmi:type="utility:TranslatableString" key="Property.REPLY_QUEUE_MGR" bundleName="Main" pluginId="HttpToMQ-app"/>
+            <propertyDescriptor groupName="Group.MQ" configurable="true" userDefined="true" describedAttribute="Property.PROVIDER_QUEUE_MGR">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.PROVIDER_QUEUE_MGR" bundleName="Main" pluginId="HttpToMQ-app"/>
+            </propertyDescriptor>
           </propertyDescriptor>
         </propertyDescriptor>
       </propertyDescriptor>
