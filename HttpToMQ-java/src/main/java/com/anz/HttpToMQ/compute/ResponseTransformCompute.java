@@ -4,9 +4,9 @@
 package com.anz.HttpToMQ.compute;
 
 import com.anz.HttpToMQ.transform.PostTransformBLSample;
-
-import com.anz.HttpToMQ.transform.TransformBLSampleWithCache;
+import com.anz.common.compute.ComputeInfo;
 import com.anz.common.compute.impl.CommonBlobTransformCompute;
+import com.anz.common.compute.impl.ComputeUtils;
 import com.anz.common.transform.ITransformer;
 import com.ibm.broker.plugin.MbMessageAssembly;
 
@@ -24,10 +24,18 @@ public class ResponseTransformCompute extends CommonBlobTransformCompute {
 		return new PostTransformBLSample();
 	}
 
+
 	@Override
-	public void saveUserProvidedProperties(MbMessageAssembly outAssembly) {
+	public void executeAfterTransformation(ComputeInfo metadata,
+			MbMessageAssembly inAssembly, MbMessageAssembly outAssembly)
+			throws Exception {
 		// TODO Auto-generated method stub
+		super.executeAfterTransformation(metadata, inAssembly, outAssembly);
 		
+		ComputeUtils.setElementInTree("application/json", outAssembly.getMessage(), "Properties", "ContentType");
+
 	}
+	
+	
 
 }
