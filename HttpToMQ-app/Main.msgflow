@@ -155,7 +155,7 @@
         </monitorEvents>
       </nodes>
       <nodes xmi:type="FailureHandler.subflow:FCMComposite_1" xmi:id="FCMComposite_1_5" location="949,-44">
-        <translation xmi:type="utility:ConstantString" string="FailureHandler1"/>
+        <translation xmi:type="utility:ConstantString" string="FailureHandler"/>
       </nodes>
       <nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="936,-131" mqmdAAAOptions="Delete header" mqmdCodedCharSetId="MQCCSI_Q_MGR" mqmdFormat="MQFMT_NONE" mqmdVersion="MQMD_VERSION_1" mqmdMsgType="MQMT_DATAGRAM" mqmdExpiry="MQEI_UNLIMITED" mqmdFeedback="MQFB_NONE" mqmdPriority="MQPRI_PRIORITY_AS_Q_DEF" mqmdPersistence="MQPER_PERSISTENCE_AS_Q_DEF" mqmdMsgId="MQMI_NONE" mqmdCorrelId="MQCI_NONE">
         <translation xmi:type="utility:ConstantString" string="Remove MQ Header"/>

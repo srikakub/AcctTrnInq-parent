@@ -78,9 +78,9 @@ public class HttpToMQFlowFailureTest extends FlowTest {
 		logger.info("injecting data...");
 		// load test data from file
 		String message = IOUtils.toString(HttpToMQFlowTest.class.getResourceAsStream(TEST_FILE_001));
-		String jsonBlob = TransformUtils.getBlob(message);
+		//String jsonBlob = TransformUtils.getBlob(message);
 		String messageFormat = IOUtils.toString(HttpToMQFlowTest.class.getResourceAsStream(MESSAGE_FORMAT));
-		message = messageFormat.replace("MESSAGE_FORMAT", jsonBlob);
+		message = messageFormat.replace("MESSAGE_FORMAT", message);
 		
 		Properties injectProps = new Properties();
 		injectProps.setProperty(AttributeConstants.DATA_INJECTION_APPLICATION_LABEL, applicationName); 		
@@ -112,7 +112,7 @@ public class HttpToMQFlowFailureTest extends FlowTest {
 	public void testFailureHandlerSubflowOutput() throws ConfigManagerProxyPropertyNotInitializedException, XPathExpressionException, SAXException, IOException, ParserConfigurationException {	
 		
 		// PreTransform Node
-		List<RecordedTestData> dataList = getTestDataList("Failure Handler");
+		List<RecordedTestData> dataList = getTestDataList("HTTP Reply", true);
 				
 		String json = getNodeOutputJsonStringFromBlob(dataList.get(0));
 		ExceptionMessage out = gson.fromJson(json, ExceptionMessage.class);

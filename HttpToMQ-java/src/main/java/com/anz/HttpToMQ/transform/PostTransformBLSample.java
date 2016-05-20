@@ -32,7 +32,7 @@ public class PostTransformBLSample implements ITransformer<String, String> {
 	/* (non-Javadoc)
 	 * @see com.anz.common.transform.IJsonJsonTransformer#execute(java.lang.String)
 	 */
-	public String execute(String inputJson, Logger logger, ComputeInfo metadata) throws Exception {
+	public String execute(String inputJson, Logger appLogger, ComputeInfo metadata) throws Exception {
 		NumbersInput json = (NumbersInput) TransformUtils.fromJSON(inputJson,
 				NumbersInput.class);
 		logger.info("Inside Post Transform");
