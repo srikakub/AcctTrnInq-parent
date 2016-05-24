@@ -3,7 +3,6 @@
 	<name>HttpToMQ-lib</name>
 	<comment></comment>
 	<projects>
-		<project>anz-iib-commons-lib</project>
 		<project>HttpToMQ-java</project>
 	</projects>
 	<buildSpec>
