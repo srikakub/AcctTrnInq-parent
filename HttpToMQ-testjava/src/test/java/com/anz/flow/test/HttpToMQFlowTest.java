@@ -61,19 +61,20 @@ public class HttpToMQFlowTest extends FlowTest {
 	private static final String flowName = "Main";
 	private static final String injectNodeName = "HTTP Input";
 	private static final String MESSAGE_FORMAT = "MessageFormat.xml";
-	//private static final String MESSAGE_FORMAT = "NewMessageFormat.xml";
 	
 	@Override
 	@Before
 	public void setup()
 			throws ConfigManagerProxyPropertyNotInitializedException,
 			ConfigManagerProxyLoggedException, IOException {
+		
 		super.setup();	
 		
 		ExecutionGroupProxy serverProxy = getIntegrationServerProxy();
 		MessageFlowProxy flowProxy = serverProxy.getMessageFlowByName(flowName, applicationName, null);
 		
 		setFlowProxy(flowProxy);
+		
 	}
 	
 	public void injectData() throws IOException, ConfigManagerProxyPropertyNotInitializedException, ConfigManagerProxyLoggedException {
@@ -94,6 +95,13 @@ public class HttpToMQFlowTest extends FlowTest {
 		injectProps.setProperty(AttributeConstants.DATA_INJECTION_WAIT_TIME, "60000");
 		injectProps.setProperty(AttributeConstants.DATA_INJECTION_MESSAGE_SECTION, message);
 
+		ExecutionGroupProxy server = getIntegrationServerProxy();
+		logger.info("server = {}", server);
+		ApplicationProxy app = server.getApplicationByName(applicationName);
+		logger.info("app = {}", app);
+		MessageFlowProxy flow = app.getMessageFlowByName(flowName);
+		logger.info("flow = {}", flow);
+		
 		
 		// execute flow in synchronous mode
 		@SuppressWarnings("unused")

@@ -5,11 +5,15 @@
 package com.anz.HttpToMQ.compute;
 
 import org.apache.logging.log4j.LogManager;
+
 import org.apache.logging.log4j.Logger;
+import org.eclipse.persistence.internal.libraries.asm.tree.IntInsnNode;
 
 import com.anz.common.compute.TransformType;
 import com.anz.common.compute.impl.CommonJavaCompute;
 import com.anz.common.compute.impl.ComputeUtils;
+import com.anz.common.transform.TransformUtils;
+import com.ibm.broker.plugin.MbBLOB;
 import com.ibm.broker.plugin.MbElement;
 import com.ibm.broker.plugin.MbMessageAssembly;
 
@@ -20,11 +24,32 @@ import com.ibm.broker.plugin.MbMessageAssembly;
 public class AddUserDefinedProperties extends CommonJavaCompute {
 
 	private static final Logger logger = LogManager.getLogger();
+	private static final int MESSAGE_ID_LENGTH = 24;
+	private static final int INIT_TO_ZERO = 0;
 
 
 	@Override
 	public void execute(MbMessageAssembly inAssembly,
 			MbMessageAssembly outAssembly) throws Exception {
+		 
+		
+		// Get Transaction ID
+		String transId = ComputeUtils.getTransactionId(outAssembly);
+		logger.info("transId = {}", transId);
+		
+		// Convert Transaction ID to String
+		byte[] msgIdByteArray = ComputeUtils.getMsgIdFromString(transId);
+		
+		if(msgIdByteArray != null){
+		
+			logger.info("msgByteArray = {}", msgIdByteArray);
+			
+			// Set msgId
+			MbElement msgId = outAssembly.getMessage().getRootElement().getFirstElementByPath("/MQMD/MsgId");
+			msgId.setValue(msgIdByteArray);		
+			logger.info("msgId = {}", msgId.getValue());
+			
+		}
 
 		// Set ReplyToQ MQMD field to the UDP REPLY_QUEUE
 		MbElement replyToQ = ComputeUtils.setElementInTree(getUserDefinedAttribute("REPLY_QUEUE"), outAssembly.getMessage(), "MQMD","ReplyToQ");
@@ -41,8 +66,7 @@ public class AddUserDefinedProperties extends CommonJavaCompute {
 		// Set the Local Environment MQ output queue manager parameter to the UDP PROVIDER_QUEUE_MGR
 		MbElement providerQMgr = ComputeUtils.setElementInTree(getUserDefinedAttribute("PROVIDER_QUEUE_MGR"), outAssembly.getLocalEnvironment(),"Destination", "MQ","DestinationData","queueManagerName");
 		logger.info("{} = {}", providerQMgr.getName(), providerQMgr.getValueAsString());
-		
-		
+
 	}
 	 
 
