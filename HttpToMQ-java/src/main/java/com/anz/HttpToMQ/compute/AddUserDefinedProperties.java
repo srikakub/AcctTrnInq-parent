@@ -24,8 +24,6 @@ import com.ibm.broker.plugin.MbMessageAssembly;
 public class AddUserDefinedProperties extends CommonJavaCompute {
 
 	private static final Logger logger = LogManager.getLogger();
-	private static final int MESSAGE_ID_LENGTH = 24;
-	private static final int INIT_TO_ZERO = 0;
 
 
 	@Override
