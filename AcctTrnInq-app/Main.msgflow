@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmHTTPHeader.msgnode="ComIbmHTTPHeader.msgnode" xmlns:ComIbmJavaCompute.msgnode="ComIbmJavaCompute.msgnode" xmlns:ComIbmMQHeader.msgnode="ComIbmMQHeader.msgnode" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ComIbmWSInput.msgnode="ComIbmWSInput.msgnode" xmlns:ComIbmWSReply.msgnode="ComIbmWSReply.msgnode" xmlns:FailureHandler.subflow="FailureHandler.subflow"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:mbmonitor="http://www.ibm.com/wbi/2008/eflow_mbmonitor" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="Main.msgflow" nsPrefix="Main.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CIS_QUEUE" name="CIS_QUEUE" lowerBound="1" defaultValueLiteral="AcctTrnInq.CIS">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CTMREPLY_QUEUE" name="CTMREPLY_QUEUE" defaultValueLiteral="AcctTrnInq.CTMRESPONSE">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CIS_RQM" name="CIS_RQM" lowerBound="1" defaultValueLiteral="IIBQMGR">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.LOGGER_NAME" name="LOGGER_NAME" defaultValueLiteral="ApplicationLogger">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.ALERT_QUEUE" name="ALERT_QUEUE" defaultValueLiteral="ALERT">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.ALERT_QUEUE_MGR" name="ALERT_QUEUE_MGR" defaultValueLiteral="IIBQMGR">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.ALERT" name="ALERT" defaultValueLiteral="FALSE">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.FIRE_AND_FORGET" name="FIRE_AND_FORGET" defaultValueLiteral="FALSE">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.INCIDENT_AREA" name="INCIDENT_AREA" defaultValueLiteral="GAMS">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CISREPLY_QUEUE" name="CISREPLY_QUEUE" defaultValueLiteral="AcctTrnInq.CISRESPONSE">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CTM_QUEUE" name="CTM_QUEUE" defaultValueLiteral="AcctTrnInq.CTM">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CTM_RQM" name="CTM_RQM" defaultValueLiteral="IIBQMGR">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CIS_QM" name="CIS_QM" defaultValueLiteral="IIBQMGR">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CTM_QM" name="CTM_QM" defaultValueLiteral="IIBQMGR">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <translation xmi:type="utility:TranslatableString" key="Main" bundleName="Main" pluginId="AcctTrnInq-app"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/AcctTrnInq-app/icons/full/obj16/Main.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/AcctTrnInq-app/icons/full/obj30/Main.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="895,121" queueName="AcctTrnInq.CTM" destinationMode="list" transactionMode="yes" queueManagerName="">
+        <translation xmi:type="utility:ConstantString" string="CTM Request"/>
+        <shortDescription xmi:type="utility:ConstantString" string="Output message onto service input queue"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_35" location="282,92" javaClass="com.anz.AcctTrnInq.compute.RequestTransformCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="CIS Request Transform"/>
+        <shortDescription xmi:type="utility:ConstantString" string="User defined Java transformation "/>
+        <monitorEvents eventSourceDescription="Out terminal" eventSourceName="CIS Request Transform.terminal.out" eventIdentity="CIS Request Transform.OutTerminal">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <applicationData dataLocation="$LocalEnvironment/HTTP" isXPath="true" complexData="true"/>
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="CIS Request Transform.OutTerminal"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="23,234" URLSpecifier="/accounts/banking/*" messageDomainProperty="BLOB">
+        <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
+        <monitorEvents eventSourceDescription="Out terminal" eventSourceName="HTTP Input.terminal.out" eventIdentity="HTTP Input.OutTerminal">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <applicationData dataLocation="$LocalEnvironment/HTTP" isXPath="true" complexData="true"/>
+            <globalTransactionCorrelator dataLocation="$LocalEnvironment/HTTP/Transaction-Id" eventCorrelation="dataLocation"/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="HTTP Input.OutTerminal"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+        <monitorEvents eventSourceDescription="Catch terminal" eventSourceName="HTTP Input.terminal.catch" eventIdentity="HTTP Input.CatchTerminal">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="HTTP Input.CatchTerminal"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="922,245" generateDefaultHttpHeaders="false">
+        <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
+        <monitorEvents eventSourceDescription="Out terminal" eventSourceName="HTTP Reply.terminal.out" eventIdentity="HTTP Reply.OutTerminal">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <applicationData dataLocation="$LocalEnvironment/HTTP" isXPath="true" complexData="true"/>
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="HTTP Reply.OutTerminal"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="518,175" mqmdAAAOptions="Add header" mqmdCodedCharSetId="MQCCSI_Q_MGR" mqmdFormat="MQFMT_NONE" mqmdVersion="MQMD_VERSION_1" mqmdMsgType="MQMT_REPLY" mqmdExpiry="MQEI_UNLIMITED" mqmdFeedback="MQFB_NONE" mqmdPriority="MQPRI_PRIORITY_AS_Q_DEF" mqmdPersistence="MQPER_PERSISTENCE_AS_Q_DEF" mqmdMsgId="MQMI_NONE" mqmdCorrelId="MQCI_NEW_SESSION" mqmdReplyToQ="AcctTrnInq.CTMRESPONSE">
+        <translation xmi:type="utility:ConstantString" string="Add MQ Header CTM"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="630,117" javaClass="com.anz.AcctTrnInq.compute.AddUserDefinedProperties" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="AddUserDefinedProperties"/>
+        <monitorEvents eventSourceDescription="Out terminal" eventSourceName="AddUserDefinedProperties.terminal.out" eventIdentity="AddUserDefinedProperties.OutTerminal">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <applicationData dataLocation="$LocalEnvironment/HTTP" isXPath="true" complexData="true"/>
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="AddUserDefinedProperties.OutTerminal"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="FailureHandler.subflow:FCMComposite_1" xmi:id="FCMComposite_1_5" location="158,245">
+        <translation xmi:type="utility:ConstantString" string="FailureHandler"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="63,167" javaClass="com.anz.AcctTrnInq.compute.LoggingInputCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="Logging Input"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="763,245" javaClass="com.anz.AcctTrnInq.compute.LoggingOutputCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="Logging Output"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="369,386" javaClass="com.anz.AcctTrnInq.compute.LoggingOutputCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="Logging Response"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="768,162" javaClass="com.anz.AcctTrnInq.compute.LoggingInputCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="Logging Request"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="605,380" httpResponseHeader="CarryForward" httpRequestHeader="CarryForward" httpReplyHeader="Add">
+        <translation xmi:type="utility:ConstantString" string="HTTP Header"/>
+        <nameValue4ReplyHeader name="Content-Type" type="XPath" value="$Root/Properties/ContentType"/>
+        <nameValue4ReplyHeader name="RequestID" type="XPath" value="$Root/Properties/ReplyIdentifier"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="272,175" javaClass="com.anz.AcctTrnInq.transform.RequestCobolTransform" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="CTM Request Transform"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_18" location="67,442" queueName="AcctTrnInq.CTMRESPONSE" messageDomainProperty="DFDL" messageTypeProperty="{}:AcctTrnInqCTMRsp">
+        <translation xmi:type="utility:ConstantString" string="CTM Response"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_21" location="221,334" javaClass="com.anz.AcctTrnInq.compute.ResponseTransformCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="CIS Response Transform"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_22" location="886,23" destinationMode="list" transactionMode="yes">
+        <translation xmi:type="utility:ConstantString" string="CIS Request"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_24" location="521,90" mqmdAAAOptions="Add header" mqmdCodedCharSetId="MQCCSI_Q_MGR" mqmdFormat="MQFMT_NONE" mqmdVersion="MQMD_VERSION_1" mqmdMsgType="MQMT_REPLY" mqmdExpiry="MQEI_UNLIMITED" mqmdFeedback="MQFB_NONE" mqmdPriority="MQPRI_PRIORITY_AS_Q_DEF" mqmdPersistence="MQPER_PERSISTENCE_AS_Q_DEF" mqmdMsgId="MQMI_NONE" mqmdCorrelId="MQCI_NEW_SESSION" mqmdReplyToQ="AcctTrnInq.CISRESPONSE">
+        <translation xmi:type="utility:ConstantString" string="Add MQ Header CIS"/>
+        <monitorEvents eventSourceDescription="Out terminal" eventSourceName="Add MQ Header CIS.terminal.out" eventIdentity="Add MQ Header CIS.OutTerminal">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <applicationData dataLocation="$LocalEnvironment/HTTP" isXPath="true" complexData="true"/>
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="Add MQ Header CIS.OutTerminal"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_25" location="764,72" javaClass="com.anz.AcctTrnInq.compute.LoggingInputCompute" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="Logging Request1"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_26" location="622,19" javaClass="com.anz.AcctTrnInq.compute.AddUserDefinedProperties" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="AddUserDefinedProperties1"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_16" location="410,115" httpInputHeader="DeleteHeader">
+        <translation xmi:type="utility:ConstantString" string="Delete HTTP Header"/>
+      </nodes>
+      <nodes xmi:type="ComIbmHTTPHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_28" location="407,27" httpInputHeader="DeleteHeader">
+        <translation xmi:type="utility:ConstantString" string="Delete HTTP Header1"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="76,334" queueName="AcctTrnInq.CISRESPONSE">
+        <translation xmi:type="utility:ConstantString" string="CIS Response"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_17" location="163,166" javaClass="com.anz.AcctTrnInq.transform.FlowRedirection" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="FlowRedirection"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="216,442" javaClass="com.anz.AcctTrnInq.transform.ResponseCobolTransform" javaClassLoader="{AcctTrnInq-lib}">
+        <translation xmi:type="utility:ConstantString" string="CTM Response Transform"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQHeader.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_19" location="474,325" mqmdAAAOptions="Delete header" mqmdCodedCharSetId="MQCCSI_Q_MGR" mqmdFormat="MQFMT_NONE" mqmdVersion="MQMD_VERSION_1" mqmdMsgType="MQMT_DATAGRAM" mqmdExpiry="MQEI_UNLIMITED" mqmdFeedback="MQFB_NONE" mqmdPriority="MQPRI_PRIORITY_AS_Q_DEF" mqmdPersistence="MQPER_PERSISTENCE_AS_Q_DEF" mqmdMsgId="MQMI_NONE" mqmdCorrelId="MQCI_NONE" mqdlhAAAOptions="Delete header" mqdlhCodedCharSetId="MQCCSI_Q_MGR"
+          mqdlhFormat="MQFMT_NONE" mqdlhReason="MQRC_NONE">
+        <translation xmi:type="utility:ConstantString" string="Remove MQ Header"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_16" targetNode="FCMComposite_1_10" sourceNode="FCMComposite_1_12" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_12" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_26" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_21" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_27" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_29" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_36" targetNode="FCMComposite_1_22" sourceNode="FCMComposite_1_25" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_41" targetNode="FCMComposite_1_12" sourceNode="FCMComposite_1_8" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_43" targetNode="FCMComposite_1_25" sourceNode="FCMComposite_1_26" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_16" sourceNode="FCMComposite_1_14" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_10" targetNode="FCMComposite_1_28" sourceNode="FCMComposite_1_35" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_9" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_21" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_1" sourceNode="FCMComposite_1_18" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_13" targetNode="FCMComposite_1_19" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_14" targetNode="FCMComposite_1_13" sourceNode="FCMComposite_1_19" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_53" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_16" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_54" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_11" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_55" targetNode="FCMComposite_1_24" sourceNode="FCMComposite_1_28" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_56" targetNode="FCMComposite_1_26" sourceNode="FCMComposite_1_24" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_14" sourceNode="FCMComposite_1_21" sourceTerminalName="OutTerminal.alternate" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_17" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_11" targetNode="FCMComposite_1_35" sourceNode="FCMComposite_1_17" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_15" targetNode="FCMComposite_1_14" sourceNode="FCMComposite_1_17" sourceTerminalName="OutTerminal.alternate" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer>
+      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CIS_QUEUE">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.CIS_QUEUE" bundleName="Main" pluginId="AcctTrnInq-app"/>
+        <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CTMREPLY_QUEUE">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.CTMREPLY_QUEUE" bundleName="Main" pluginId="AcctTrnInq-app"/>
+          <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CIS_RQM">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.CIS_RQM" bundleName="Main" pluginId="AcctTrnInq-app"/>
+            <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.LOGGER_NAME">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.LOGGER_NAME" bundleName="Main" pluginId="AcctTrnInq-app"/>
+              <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.ALERT_QUEUE">
+                <propertyName xmi:type="utility:TranslatableString" key="Property.ALERT_QUEUE" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.ALERT_QUEUE_MGR">
+                  <propertyName xmi:type="utility:TranslatableString" key="Property.ALERT_QUEUE_MGR" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                  <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.ALERT">
+                    <propertyName xmi:type="utility:TranslatableString" key="Property.ALERT" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                    <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.FIRE_AND_FORGET">
+                      <propertyName xmi:type="utility:TranslatableString" key="Property.FIRE_AND_FORGET" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.INCIDENT_AREA">
+                        <propertyName xmi:type="utility:TranslatableString" key="Property.INCIDENT_AREA" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                        <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CISREPLY_QUEUE">
+                          <propertyName xmi:type="utility:TranslatableString" key="Property.CISREPLY_QUEUE" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                          <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CTM_QUEUE">
+                            <propertyName xmi:type="utility:TranslatableString" key="Property.CTM_QUEUE" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                            <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CTM_RQM">
+                              <propertyName xmi:type="utility:TranslatableString" key="Property.CTM_RQM" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                              <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CIS_QM">
+                                <propertyName xmi:type="utility:TranslatableString" key="Property.CIS_QM" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                                <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CTM_QM">
+                                  <propertyName xmi:type="utility:TranslatableString" key="Property.CTM_QM" bundleName="Main" pluginId="AcctTrnInq-app"/>
+                                </propertyDescriptor>
+                              </propertyDescriptor>
+                            </propertyDescriptor>
+                          </propertyDescriptor>
+                        </propertyDescriptor>
+                      </propertyDescriptor>
+                    </propertyDescriptor>
+                  </propertyDescriptor>
+                </propertyDescriptor>
+              </propertyDescriptor>
+            </propertyDescriptor>
+          </propertyDescriptor>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+    <stickyBoard/>
+    <patternAnnotations/>
+  </eClassifiers>
+</ecore:EPackage>

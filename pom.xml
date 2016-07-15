@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.anz.api</groupId>
-	<artifactId>HttpToMQ-parent</artifactId>
+	<artifactId>AcctTrnInq-parent</artifactId>
 	<version>0.0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
 	<properties>
-	<gitUrl>https://github.com/sanketsw/HttpToMQ-parent.git</gitUrl>
+	<gitUrl>https://github.com/srikakub/AcctTrnInq-parent.git</gitUrl>
 	</properties>
 
 	<distributionManagement>
@@ -32,10 +32,10 @@
 	</scm>
 
 	<modules>
-		<module>HttpToMQ-java</module>
-		<module>HttpToMQ-lib</module>
-		<module>HttpToMQ-app</module>
-		<module>HttpToMQ-testjava</module>
+		<module>AcctTrnInq-java</module>
+		<module>AcctTrnInq-lib</module>
+		<module>AcctTrnInq-app</module>
+		<module>AcctTrnInq-testjava</module>
 	</modules>
 	<build>
 		<plugins>

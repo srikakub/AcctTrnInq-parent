@@ -1,0 +1,24 @@
+Running command...
+C:\Program Files\IBM\IIB\10.0.0.4\common\jdk\bin\xjc.exe -d "C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-java\src\main\java" -p "com.anz.AcctTrnInq.transform.pojo" "C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\AcctTrnInq.xsd" 
+parsing a schema...
+compiling a schema...
+com\anz\AcctTrnInq\transform\pojo\runtime\ZeroOneBooleanAdapter.java
+com\anz\AcctTrnInq\transform\pojo\ANZAcctIdType.java
+com\anz\AcctTrnInq\transform\pojo\ANZTraceInfoType.java
+com\anz\AcctTrnInq\transform\pojo\AcctTrnInqRq.java
+com\anz\AcctTrnInq\transform\pojo\AcctTrnInqRs.java
+com\anz\AcctTrnInq\transform\pojo\BankAcctTrnRecType.java
+com\anz\AcctTrnInq\transform\pojo\BankInfoType.java
+com\anz\AcctTrnInq\transform\pojo\CardholderIdType.java
+com\anz\AcctTrnInq\transform\pojo\ComAnzANZAcctIdType.java
+com\anz\AcctTrnInq\transform\pojo\CustIdType.java
+com\anz\AcctTrnInq\transform\pojo\ObjectFactory.java
+com\anz\AcctTrnInq\transform\pojo\PostAddrType.java
+com\anz\AcctTrnInq\transform\pojo\RecCtrlInType.java
+com\anz\AcctTrnInq\transform\pojo\RecCtrlOutType.java
+com\anz\AcctTrnInq\transform\pojo\RefInfoType.java
+com\anz\AcctTrnInq\transform\pojo\SelRangeChqNumType.java
+com\anz\AcctTrnInq\transform\pojo\SelRangeCurAmtType.java
+com\anz\AcctTrnInq\transform\pojo\SelRangeDtType.java
+com\anz\AcctTrnInq\transform\pojo\StatusType.java
+com\anz\AcctTrnInq\transform\pojo\TrnFiltersType.java

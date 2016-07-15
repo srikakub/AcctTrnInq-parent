@@ -1,0 +1,26 @@
+
+
+CREATE COMPUTE MODULE STUB_CIS_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		 CALL CopyMessageHeaders();
+		 SET OutputRoot.BLOB.BLOB = CAST('<AcctTrnInqRs><ANZAcctId><AcctId>003497016</AcctId><AcctType>DDA</AcctType></ANZAcctId><CustId><CustPermId>316694368</CustPermId></CustId><SelRangeDt><Today>1</Today></SelRangeDt><IncDetail>1</IncDetail><RecCtrlOut><SentRec>17</SentRec></RecCtrlOut><BankAcctTrnRec><TrnDt>2014-03-19</TrnDt><TrnTm>14:46:13</TrnTm><TrnType>5</TrnType><TrnCode>52</TrnCode><BranchNum>3456</BranchNum><Desc1>MOBILE PHONE BANKING FUNDS TRANSFER</Desc1><Desc2>    013349</Desc2><Amt>-0.42</Amt></BankAcctTrnRec><BankAcctTrnRec><TrnDt>2014-03-19</TrnDt><TrnTm>14:43:54</TrnTm><TrnType>5</TrnType><TrnCode>52</TrnCode><BranchNum>3456</BranchNum><Desc1>MOBILE PHONE BANKING FUNDS TRANSFER</Desc1><Desc2>     013347</Desc2><Amt>600.00</Amt></BankAcctTrnRec><BankAcctTrnRec><TrnDt>2014-03-18</TrnDt><TrnTm>15:55:54</TrnTm><TrnType>5</TrnType><TrnCode>52</TrnCode><BranchNum>3456</BranchNum><Desc1>MOBILE PHONE BANKING FUNDS TRANSFER</Desc1><Desc2>     013177</Desc2><Amt>73.00</Amt></BankAcctTrnRec><BankAcctTrnRec><TrnDt>2014-03-18</TrnDt><TrnTm>15:55:54</TrnTm><TrnType>5</TrnType><TrnCode>52</TrnCode><BranchNum>3456</BranchNum><Desc1>MOBILE PHONE BANKING FUNDS TRANSFER</Desc1><Desc2>     013177</Desc2><Amt>73.00</Amt></BankAcctTrnRec><BankAcctTrnRec><TrnDt>2014-03-18</TrnDt><TrnTm>15:55:54</TrnTm><TrnType>5</TrnType><TrnCode>52</TrnCode><BranchNum>3456</BranchNum><Desc1>MOBILE PHONE BANKING FUNDS TRANSFER</Desc1><Desc2>     013177</Desc2><Amt>73.00</Amt></BankAcctTrnRec></AcctTrnInqRs>' AS BLOB CCSID 1208);
+		 SET OutputRoot.MQMD.CorrelId = InputRoot.MQMD.CorrelId;
+		-- CALL CopyEntireMessage();
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

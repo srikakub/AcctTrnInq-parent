@@ -1,0 +1,860 @@
+2016-07-14 15:48:57.0592 main........... i: Message Flow API - Basic Information:
+System CLASSPATH = C:\Bhupathi\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+System OS Name = Windows 7
+System OS Architecture = amd64
+System OS Version = 6.1
+System JRE Version = 1.7.0
+System JRE Vendor = IBM Corporation
+Message Flow API Version = 80
+Message Flow API SCCS Version = %W% %I%
+com.ibm.broker.config.appdev.MessageFlow loaded from file:/C:/Bhupathi/IIB10/Maven/repository/com/ibm/broker/config/proxy/IntegrationAPI/10.0.0.4/IntegrationAPI-10.0.0.4.jar!/com/ibm/broker/config/appdev/MessageFlow.class
+com.ibm.broker.config.appdev.FlowRendererMSGFLOW loaded from file:/C:/Bhupathi/IIB10/Maven/repository/com/ibm/broker/config/proxy/IntegrationAPI/10.0.0.4/IntegrationAPI-10.0.0.4.jar!/com/ibm/broker/config/appdev/FlowRendererMSGFLOW.class
+com.ibm.broker.config.appdev.FlowRendererBAR loaded from file:/C:/Bhupathi/IIB10/Maven/repository/com/ibm/broker/config/proxy/IntegrationAPI/10.0.0.4/IntegrationAPI-10.0.0.4.jar!/com/ibm/broker/config/appdev/FlowRendererBAR.class
+com.ibm.broker.config.appdev.FlowRendererCMF loaded from file:/C:/Bhupathi/IIB10/Maven/repository/com/ibm/broker/config/proxy/IntegrationAPI/10.0.0.4/IntegrationAPI-10.0.0.4.jar!/com/ibm/broker/config/appdev/FlowRendererCMF.class
+com.ibm.broker.config.proxy.BrokerProxy loaded from file:/C:/Bhupathi/IIB10/Maven/repository/com/ibm/broker/config/proxy/IntegrationAPI/10.0.0.4/IntegrationAPI-10.0.0.4.jar!/com/ibm/broker/config/proxy/BrokerProxy.class
+com.ibm.broker.config.common.UUIDHelper loaded from file:/C:/Bhupathi/IIB10/Maven/repository/com/ibm/broker/config/proxy/IntegrationAPI/10.0.0.4/IntegrationAPI-10.0.0.4.jar!/com/ibm/broker/config/common/UUIDHelper.class
+com.ibm.broker.config.util.ParameterList not found in CLASSPATH.
+com.ibm.mq.MQEnvironment not found in CLASSPATH.
+java.lang.System loaded from file:/C:/Program%20Files/IBM/IIB/10.0.0.4/common/jdk/jre/bin/compressedrefs/jclSC170/vm.jar!/java/lang/System.class
+2016-07-14 15:48:57.0593 main........... i: com.ibm.broker.LoggerFile instantiated
+2016-07-14 15:48:57.0593 main........... { com.ibm.broker.config.appdev.CommandProcessor.packageBAR(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\target\AcctTrnInq-lib-0.0.0.1-SNAPSHOT.bar, [], [AcctTrnInq-lib], [], [], 
+2016-07-14 15:48:57.0593 main...........   i: Include source - C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib
+2016-07-14 15:48:57.0594 main...........   { com.ibm.broker.config.appdev.FlowRendererBAR.write(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., [AcctTrnInq-lib], C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\target, false, 
+2016-07-14 15:48:57.0596 main...........     { com.ibm.broker.config.appdev.FlowRendererInternalBAR.write(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., [AcctTrnInq-lib], C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\target, AcctTrnInq-lib-0.0.0.1-SNAPSHOT.bar, true, 0, false, 
+2016-07-14 15:48:57.0596 main...........       { com.ibm.broker.config.appdev.BARUtil.setIncludeAllArtifacts(false, 
+2016-07-14 15:48:57.0596 main...........       } com.ibm.broker.config.appdev.BARUtil.setIncludeAllArtifacts()
+2016-07-14 15:48:57.0597 main...........       { com.ibm.broker.config.appdev.FlowRendererInternalBAR.toInputStream([AcctTrnInq-lib], null, true, 0, 
+2016-07-14 15:48:57.0597 main...........         { com.ibm.broker.config.appdev.FlowRendererInternalBAR.toByteArray(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., [AcctTrnInq-lib], null, true, 0, 
+2016-07-14 15:48:57.0597 main...........           { com.ibm.broker.config.appdev.FlowRendererInternalBAR.zipDirectory(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., AcctTrnInq-lib, true, java.util.zip.ZipOutputStream@a8e540a0, 
+2016-07-14 15:48:57.0598 main...........             { com.ibm.broker.config.appdev.BARUtil.zipEntryExists(java.util.zip.ZipOutputStream@a8e540a0, AcctTrnInq-lib, 
+2016-07-14 15:48:57.0598 main...........             } com.ibm.broker.config.appdev.BARUtil.zipEntryExists() false
+2016-07-14 15:48:57.0599 main...........             { com.ibm.broker.config.appdev.DotProject.parse(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib\.project, 
+2016-07-14 15:48:57.0599 main...........               { com.ibm.broker.config.appdev.BARUtil.readFileAsString(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib\.project, 
+2016-07-14 15:48:57.0604 main...........               } com.ibm.broker.config.appdev.BARUtil.readFileAsString() <?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>AcctTrnInq-lib</name>
+	<comment></comment>
+	<projects>
+		<project>AcctTrnInq-java</project>
+		<project>AcctTrnInq-lib</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.ibm.etools.mft.applib.applibbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.applib.applibresourcevalidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.connector.policy.ui.PolicyBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.connector.ui.editor.connectorServiceBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.connector.ui.editor.connectorEventBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.uri.sharedlibbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.applib.mbprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.msg.validation.dfdl.mlibdfdlbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.adapters.adapterbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.sca.scabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.msg.validation.dfdl.mbprojectresourcesbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.esql.lang.esqllangbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.map.builder.mslmappingbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.msgflowxsltbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.msgflowbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.decision.service.ui.decisionservicerulebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.pattern.capture.PatternBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.msg.validation.dfdl.dfdlqnamevalidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.bar.ext.barbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.unittest.ui.TestCaseBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.json.builder.JSONBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.ibm.etools.msgbroker.tooling.libraryNature</nature>
+		<nature>com.ibm.etools.msgbroker.tooling.messageBrokerProjectNature</nature>
+		<nature>com.ibm.etools.msgbroker.tooling.sharedLibraryNature</nature>
+		<nature>com.ibm.etools.mft.bar.ext.barnature</nature>
+	</natures>
+</projectDescription>
+
+2016-07-14 15:48:57.0637 main...........               i: The .project file contains the nature: com.ibm.etools.msgbroker.tooling.libraryNature
+2016-07-14 15:48:57.0637 main...........               i: The .project file contains the nature: com.ibm.etools.msgbroker.tooling.messageBrokerProjectNature
+2016-07-14 15:48:57.0638 main...........               i: The .project file contains the nature: com.ibm.etools.msgbroker.tooling.sharedLibraryNature
+2016-07-14 15:48:57.0638 main...........               i: The .project file contains the nature: com.ibm.etools.mft.bar.ext.barnature
+2016-07-14 15:48:57.0638 main...........             } com.ibm.broker.config.appdev.DotProject.parse()
+2016-07-14 15:48:57.0639 main...........             { com.ibm.broker.config.appdev.BARInternalZip.Constructor(AcctTrnInq-lib, java.util.zip.ZipOutputStream@a8e540a0, 
+2016-07-14 15:48:57.0639 main...........             } com.ibm.broker.config.appdev.BARInternalZip.Constructor()
+2016-07-14 15:48:57.0640 main...........             { com.ibm.broker.config.appdev.ShlibZip.Constructor(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., AcctTrnInq-lib, true, java.util.zip.ZipOutputStream@a8e540a0, 
+2016-07-14 15:48:57.0640 main...........               { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1852, inserts=[AcctTrnInq-lib])
+2016-07-14 15:48:57.0640 main...........                 { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1852)
+2016-07-14 15:48:57.0640 main...........                 } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0641 main...........                 { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0641 main...........                 } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0641 main...........               } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0641 main...........               { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1852I: Processing file 'AcctTrnInq-lib'., 
+2016-07-14 15:48:57.0641 main...........               } com.ibm.broker.config.appdev.BARLog.removeMessageId() Processing file 'AcctTrnInq-lib'.
+2016-07-14 15:48:57.0641 main...........               { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1872, inserts=null)
+2016-07-14 15:48:57.0641 main...........                 { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1872)
+2016-07-14 15:48:57.0641 main...........                 } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0642 main...........               } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0642 main...........               { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1872I: Shared library contents:, 
+2016-07-14 15:48:57.0642 main...........               } com.ibm.broker.config.appdev.BARLog.removeMessageId() Shared library contents:
+2016-07-14 15:48:57.0642 main...........               { com.ibm.broker.config.appdev.BARInternalZip.handleContent(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\.., AcctTrnInq-lib, true, 
+2016-07-14 15:48:57.0642 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(.project, 
+2016-07-14 15:48:57.0643 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0643 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(.project, 
+2016-07-14 15:48:57.0643 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0643 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.project, 
+2016-07-14 15:48:57.0643 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0643 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(.project-original, 
+2016-07-14 15:48:57.0644 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0644 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(.project-original, 
+2016-07-14 15:48:57.0644 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0644 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.project-original, 
+2016-07-14 15:48:57.0644 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0644 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(library.descriptor, 
+2016-07-14 15:48:57.0644 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0644 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(library.descriptor, 
+2016-07-14 15:48:57.0645 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0645 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(library.descriptor, 
+2016-07-14 15:48:57.0645 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() true
+2016-07-14 15:48:57.0645 main...........                 { com.ibm.broker.config.appdev.BARInternalZip.zipFile(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib, library.descriptor, 
+2016-07-14 15:48:57.0645 main...........                   { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1852, inserts=[library.descriptor])
+2016-07-14 15:48:57.0645 main...........                     { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1852)
+2016-07-14 15:48:57.0645 main...........                     } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0645 main...........                     { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0646 main...........                     } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0646 main...........                   } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0646 main...........                   { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1852I: Processing file 'library.descriptor'., 
+2016-07-14 15:48:57.0646 main...........                   } com.ibm.broker.config.appdev.BARLog.removeMessageId() Processing file 'library.descriptor'.
+2016-07-14 15:48:57.0646 main...........                   i: Include artifiact - library.descriptor
+2016-07-14 15:48:57.0647 main...........                   { com.ibm.broker.config.appdev.BARUtil.addZipEntry(java.util.zip.ZipOutputStream@a4623b18, library.descriptor, 
+2016-07-14 15:48:57.0647 main...........                   } com.ibm.broker.config.appdev.BARUtil.addZipEntry()
+2016-07-14 15:48:57.0648 main...........                   { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1859, inserts=[library.descriptor])
+2016-07-14 15:48:57.0648 main...........                     { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1859)
+2016-07-14 15:48:57.0648 main...........                     } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0648 main...........                     { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0648 main...........                     } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0648 main...........                   } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0648 main...........                   { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1859I: Successfully added file 'library.descriptor' to the BAR file., 
+2016-07-14 15:48:57.0649 main...........                   } com.ibm.broker.config.appdev.BARLog.removeMessageId() Successfully added file 'library.descriptor' to the BAR file.
+2016-07-14 15:48:57.0649 main...........                   { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1861, inserts=[0.003])
+2016-07-14 15:48:57.0649 main...........                     { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1861)
+2016-07-14 15:48:57.0649 main...........                     } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0650 main...........                     { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0650 main...........                     } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0650 main...........                   } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0650 main...........                   { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1861I: Elapsed time: '0.003' second(s)., 
+2016-07-14 15:48:57.0650 main...........                   } com.ibm.broker.config.appdev.BARLog.removeMessageId() Elapsed time: '0.003' second(s).
+2016-07-14 15:48:57.0650 main...........                 } com.ibm.broker.config.appdev.BARInternalZip.zipFile()
+2016-07-14 15:48:57.0650 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(pom-xml-temp.txt, 
+2016-07-14 15:48:57.0651 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0651 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(pom-xml-temp.txt, 
+2016-07-14 15:48:57.0651 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0651 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(pom-xml-temp.txt, 
+2016-07-14 15:48:57.0651 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0651 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(project-compile.txt, 
+2016-07-14 15:48:57.0652 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0652 main...........                 { com.ibm.broker.config.appdev.BARUtil.isFlow(project-compile.txt, 
+2016-07-14 15:48:57.0652 main...........                 } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0652 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(project-compile.txt, 
+2016-07-14 15:48:57.0652 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0652 main...........                 { com.ibm.broker.config.appdev.BARInternalZip.zipDirectory(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib, target, true, false, 
+2016-07-14 15:48:57.0653 main...........                   { com.ibm.broker.config.appdev.BARUtil.isFlow(packagebartrace.txt, 
+2016-07-14 15:48:57.0653 main...........                   } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0653 main...........                   { com.ibm.broker.config.appdev.BARUtil.isFlow(packagebartrace.txt, 
+2016-07-14 15:48:57.0653 main...........                   } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0653 main...........                   { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(packagebartrace.txt, 
+2016-07-14 15:48:57.0653 main...........                   } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0653 main...........                 } com.ibm.broker.config.appdev.BARInternalZip.zipDirectory()
+2016-07-14 15:48:57.0654 main...........               } com.ibm.broker.config.appdev.BARInternalZip.handleContent()
+2016-07-14 15:48:57.0654 main...........               { com.ibm.broker.config.appdev.BARUtil.zipEntryExists(java.util.zip.ZipOutputStream@a8e540a0, AcctTrnInq-java, 
+2016-07-14 15:48:57.0654 main...........               } com.ibm.broker.config.appdev.BARUtil.zipEntryExists() false
+2016-07-14 15:48:57.0654 main...........               { com.ibm.broker.config.appdev.DotProject.parse(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java\.project, 
+2016-07-14 15:48:57.0654 main...........                 { com.ibm.broker.config.appdev.BARUtil.readFileAsString(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java\.project, 
+2016-07-14 15:48:57.0655 main...........                 } com.ibm.broker.config.appdev.BARUtil.readFileAsString() <?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>AcctTrnInq-java</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.java.builder.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.bar.ext.barbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.jcn.jcnbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>com.ibm.etools.mft.bar.ext.barnature</nature>
+		<nature>com.ibm.etools.mft.jcn.jcnnature</nature>
+	</natures>
+</projectDescription>
+
+2016-07-14 15:48:57.0662 main...........                 i: The .project file contains the nature: org.eclipse.jdt.core.javanature
+2016-07-14 15:48:57.0662 main...........                 i: The .project file contains the nature: org.eclipse.m2e.core.maven2Nature
+2016-07-14 15:48:57.0662 main...........                 i: The .project file contains the nature: com.ibm.etools.mft.bar.ext.barnature
+2016-07-14 15:48:57.0663 main...........                 i: The .project file contains the nature: com.ibm.etools.mft.jcn.jcnnature
+2016-07-14 15:48:57.0663 main...........               } com.ibm.broker.config.appdev.DotProject.parse()
+2016-07-14 15:48:57.0663 main...........               i: Include Java project dependency - C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java
+2016-07-14 15:48:57.0663 main...........               { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, null, 
+2016-07-14 15:48:57.0664 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.classpath, 
+2016-07-14 15:48:57.0664 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0664 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.factorypath, 
+2016-07-14 15:48:57.0664 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0665 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0665 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0665 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.project, 
+2016-07-14 15:48:57.0665 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0665 main...........                 { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, .settings, 
+2016-07-14 15:48:57.0666 main...........                   { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0666 main...........                   } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0666 main...........                 } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0666 main...........                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(pom-xml-temp.txt, 
+2016-07-14 15:48:57.0666 main...........                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0666 main...........                 { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src, 
+2016-07-14 15:48:57.0667 main...........                   { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main, 
+2016-07-14 15:48:57.0667 main...........                     { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java, 
+2016-07-14 15:48:57.0667 main...........                       { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com, 
+2016-07-14 15:48:57.0668 main...........                         { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz, 
+2016-07-14 15:48:57.0668 main...........                           { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0668 main...........                           } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0668 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq, 
+2016-07-14 15:48:57.0669 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq\compute, 
+2016-07-14 15:48:57.0669 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqUtility.java, 
+2016-07-14 15:48:57.0669 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0669 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AddUserDefinedProperties.java, 
+2016-07-14 15:48:57.0669 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0669 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(FailureTransformCompute.java, 
+2016-07-14 15:48:57.0670 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0670 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(LoggingInputCompute.java, 
+2016-07-14 15:48:57.0670 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0670 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(LoggingOutputCompute.java, 
+2016-07-14 15:48:57.0670 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0671 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RequestTransformCompute.java, 
+2016-07-14 15:48:57.0671 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0671 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ResponseTransformCompute.java, 
+2016-07-14 15:48:57.0671 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0671 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0672 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq\json, 
+2016-07-14 15:48:57.0672 main...........                               { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq\json\pojo, 
+2016-07-14 15:48:57.0673 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(JsonToPojo.java, 
+2016-07-14 15:48:57.0673 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0673 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(Pagination.java, 
+2016-07-14 15:48:57.0673 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0673 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(Transaction.java, 
+2016-07-14 15:48:57.0674 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0674 main...........                               } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0674 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0674 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq\transform, 
+2016-07-14 15:48:57.0675 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0675 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0675 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CobolToHttpTransformCompute.java, 
+2016-07-14 15:48:57.0675 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0676 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CobolToHttpTransformer.java, 
+2016-07-14 15:48:57.0676 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0676 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CollateResponse.java, 
+2016-07-14 15:48:57.0676 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0677 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(FlowRedirection.java, 
+2016-07-14 15:48:57.0677 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0677 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(HttpToCobolTransformer.java, 
+2016-07-14 15:48:57.0677 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0678 main...........                               { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq\transform\pojo, 
+2016-07-14 15:48:57.0678 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0678 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0679 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqRq.java, 
+2016-07-14 15:48:57.0679 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0679 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqRs.java, 
+2016-07-14 15:48:57.0679 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0679 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ANZAcctIdType.java, 
+2016-07-14 15:48:57.0680 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0680 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ANZTraceInfoType.java, 
+2016-07-14 15:48:57.0680 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0680 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(BankAcctTrnRecType.java, 
+2016-07-14 15:48:57.0680 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0681 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(BankInfoType.java, 
+2016-07-14 15:48:57.0681 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0681 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CardholderIdType.java, 
+2016-07-14 15:48:57.0681 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0682 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ComAnzANZAcctIdType.java, 
+2016-07-14 15:48:57.0682 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0682 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CustIdType.java, 
+2016-07-14 15:48:57.0682 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0683 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(NumbersInput.java, 
+2016-07-14 15:48:57.0683 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0683 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ObjectFactory.java, 
+2016-07-14 15:48:57.0683 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0683 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PostAddrType.java, 
+2016-07-14 15:48:57.0684 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0684 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RecCtrlInType.java, 
+2016-07-14 15:48:57.0684 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0684 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RecCtrlOutType.java, 
+2016-07-14 15:48:57.0685 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0685 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RefInfoType.java, 
+2016-07-14 15:48:57.0685 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0685 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(Result.java, 
+2016-07-14 15:48:57.0685 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0686 main...........                                 { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\AcctTrnInq\transform\pojo\runtime, 
+2016-07-14 15:48:57.0686 main...........                                   { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ZeroOneBooleanAdapter.java, 
+2016-07-14 15:48:57.0686 main...........                                   } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0687 main...........                                 } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0687 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(SelRangeChqNumType.java, 
+2016-07-14 15:48:57.0687 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0687 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(SelRangeCurAmtType.java, 
+2016-07-14 15:48:57.0688 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0688 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(SelRangeDtType.java, 
+2016-07-14 15:48:57.0688 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0688 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(StatusType.java, 
+2016-07-14 15:48:57.0688 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0689 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(TrnFiltersType.java, 
+2016-07-14 15:48:57.0689 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0689 main...........                               } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0689 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PostTransformBLSample.java, 
+2016-07-14 15:48:57.0690 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0690 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PreTransformBLSample.java, 
+2016-07-14 15:48:57.0690 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0690 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PreTransformCTM.java, 
+2016-07-14 15:48:57.0690 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0690 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RequestCobolTransform.java, 
+2016-07-14 15:48:57.0691 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0691 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ResponseCobolTransform.java, 
+2016-07-14 15:48:57.0691 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0691 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0691 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0691 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\cobolTransform, 
+2016-07-14 15:48:57.0692 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\cobolTransform\transform, 
+2016-07-14 15:48:57.0692 main...........                               { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\java\com\anz\cobolTransform\transform\pojo, 
+2016-07-14 15:48:57.0692 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMReq.java, 
+2016-07-14 15:48:57.0693 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0693 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMRsp.java, 
+2016-07-14 15:48:57.0693 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0693 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(InputHTTPHeaders.java, 
+2016-07-14 15:48:57.0693 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0693 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ObjectFactory.java, 
+2016-07-14 15:48:57.0693 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0693 main...........                               } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0694 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0694 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0694 main...........                         } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0694 main...........                       } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0694 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(jaxb-binding-201652185837.log, 
+2016-07-14 15:48:57.0694 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0695 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(jaxb-binding-201652314353.log, 
+2016-07-14 15:48:57.0695 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0695 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(jaxb-binding-2016523144038.log, 
+2016-07-14 15:48:57.0695 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0696 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(jaxb-binding-2016524122528.log, 
+2016-07-14 15:48:57.0696 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0696 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(jaxb-binding-2016529143215.log, 
+2016-07-14 15:48:57.0696 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0696 main...........                     } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0696 main...........                     { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\main\resources, 
+2016-07-14 15:48:57.0697 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0697 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0697 main...........                     } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0697 main...........                   } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0697 main...........                   { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test, 
+2016-07-14 15:48:57.0698 main...........                     { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test\java, 
+2016-07-14 15:48:57.0698 main...........                       { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test\java\com, 
+2016-07-14 15:48:57.0698 main...........                         { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test\java\com\anz, 
+2016-07-14 15:48:57.0699 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test\java\com\anz\AcctTrnInq, 
+2016-07-14 15:48:57.0699 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test\java\com\anz\AcctTrnInq\transform, 
+2016-07-14 15:48:57.0699 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PostTransformBLSampleTest.java, 
+2016-07-14 15:48:57.0700 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0700 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PreTransformBLSampleTest.java, 
+2016-07-14 15:48:57.0700 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0700 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0700 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0700 main...........                         } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0701 main...........                       } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0701 main...........                     } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0701 main...........                     { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, src\test\resources, 
+2016-07-14 15:48:57.0701 main...........                       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0701 main...........                       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0701 main...........                     } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0701 main...........                   } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0702 main...........                 } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0702 main...........                 { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target, 
+2016-07-14 15:48:57.0702 main...........                   { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar, 
+2016-07-14 15:48:57.0702 main...........                   } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() true
+2016-07-14 15:48:57.0702 main...........                   { com.ibm.broker.config.appdev.BARInternalZip.zipFile(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar, 
+2016-07-14 15:48:57.0702 main...........                     { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1852, inserts=[target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar])
+2016-07-14 15:48:57.0703 main...........                       { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1852)
+2016-07-14 15:48:57.0703 main...........                       } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0703 main...........                       { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0704 main...........                       } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0704 main...........                     } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0704 main...........                     { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1852I: Processing file 'target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar'., 
+2016-07-14 15:48:57.0704 main...........                     } com.ibm.broker.config.appdev.BARLog.removeMessageId() Processing file 'target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar'.
+2016-07-14 15:48:57.0704 main...........                     i: Include artifiact - target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar
+2016-07-14 15:48:57.0711 main...........                     { com.ibm.broker.config.appdev.BARUtil.addZipEntry(java.util.zip.ZipOutputStream@a4623b18, target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar, 
+2016-07-14 15:48:57.0711 main...........                     } com.ibm.broker.config.appdev.BARUtil.addZipEntry()
+2016-07-14 15:48:57.0711 main...........                     { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1859, inserts=[target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar])
+2016-07-14 15:48:57.0711 main...........                       { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1859)
+2016-07-14 15:48:57.0711 main...........                       } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0712 main...........                       { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0712 main...........                       } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0712 main...........                     } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0712 main...........                     { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1859I: Successfully added file 'target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar' to the BAR file., 
+2016-07-14 15:48:57.0713 main...........                     } com.ibm.broker.config.appdev.BARLog.removeMessageId() Successfully added file 'target\AcctTrnInq-java-0.0.0.1-SNAPSHOT.jar' to the BAR file.
+2016-07-14 15:48:57.0713 main...........                     { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1861, inserts=[0.009])
+2016-07-14 15:48:57.0713 main...........                       { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1861)
+2016-07-14 15:48:57.0713 main...........                       } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0713 main...........                       { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0713 main...........                       } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0713 main...........                     } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0714 main...........                     { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1861I: Elapsed time: '0.009' second(s)., 
+2016-07-14 15:48:57.0714 main...........                     } com.ibm.broker.config.appdev.BARLog.removeMessageId() Elapsed time: '0.009' second(s).
+2016-07-14 15:48:57.0714 main...........                   } com.ibm.broker.config.appdev.BARInternalZip.zipFile()
+2016-07-14 15:48:57.0714 main...........                   { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes, 
+2016-07-14 15:48:57.0715 main...........                     { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(.gitignore, 
+2016-07-14 15:48:57.0715 main...........                     } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0715 main...........                     { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com, 
+2016-07-14 15:48:57.0715 main...........                       { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz, 
+2016-07-14 15:48:57.0716 main...........                         { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq, 
+2016-07-14 15:48:57.0716 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq\compute, 
+2016-07-14 15:48:57.0716 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqUtility.class, 
+2016-07-14 15:48:57.0716 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0716 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AddUserDefinedProperties.class, 
+2016-07-14 15:48:57.0717 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0717 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(FailureTransformCompute.class, 
+2016-07-14 15:48:57.0717 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0717 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(LoggingInputCompute.class, 
+2016-07-14 15:48:57.0717 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0717 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(LoggingOutputCompute.class, 
+2016-07-14 15:48:57.0717 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0718 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RequestTransformCompute.class, 
+2016-07-14 15:48:57.0718 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0718 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ResponseTransformCompute.class, 
+2016-07-14 15:48:57.0718 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0718 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0718 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq\json, 
+2016-07-14 15:48:57.0719 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq\json\pojo, 
+2016-07-14 15:48:57.0719 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(JsonToPojo.class, 
+2016-07-14 15:48:57.0719 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0719 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(Pagination.class, 
+2016-07-14 15:48:57.0719 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0720 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(Transaction.class, 
+2016-07-14 15:48:57.0720 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0720 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0720 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0720 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq\transform, 
+2016-07-14 15:48:57.0720 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CobolToHttpTransformCompute.class, 
+2016-07-14 15:48:57.0721 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0721 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CobolToHttpTransformer.class, 
+2016-07-14 15:48:57.0721 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0721 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CollateResponse.class, 
+2016-07-14 15:48:57.0721 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0721 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(FlowRedirection.class, 
+2016-07-14 15:48:57.0721 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0722 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(HttpToCobolTransformer.class, 
+2016-07-14 15:48:57.0722 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0722 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq\transform\pojo, 
+2016-07-14 15:48:57.0722 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqRq.class, 
+2016-07-14 15:48:57.0722 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0722 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqRs.class, 
+2016-07-14 15:48:57.0723 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0723 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ANZAcctIdType.class, 
+2016-07-14 15:48:57.0723 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0723 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ANZTraceInfoType.class, 
+2016-07-14 15:48:57.0723 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0724 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(BankAcctTrnRecType.class, 
+2016-07-14 15:48:57.0724 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0724 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(BankInfoType.class, 
+2016-07-14 15:48:57.0724 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0724 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CardholderIdType.class, 
+2016-07-14 15:48:57.0725 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0725 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ComAnzANZAcctIdType.class, 
+2016-07-14 15:48:57.0725 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0725 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(CustIdType.class, 
+2016-07-14 15:48:57.0725 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0725 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(NumbersInput.class, 
+2016-07-14 15:48:57.0725 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0726 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ObjectFactory.class, 
+2016-07-14 15:48:57.0726 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0726 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PostAddrType.class, 
+2016-07-14 15:48:57.0726 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0726 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RecCtrlInType.class, 
+2016-07-14 15:48:57.0726 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0726 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RecCtrlOutType.class, 
+2016-07-14 15:48:57.0727 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0727 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RefInfoType.class, 
+2016-07-14 15:48:57.0727 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0727 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(Result.class, 
+2016-07-14 15:48:57.0727 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0727 main...........                               { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\AcctTrnInq\transform\pojo\runtime, 
+2016-07-14 15:48:57.0728 main...........                                 { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ZeroOneBooleanAdapter.class, 
+2016-07-14 15:48:57.0728 main...........                                 } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0728 main...........                               } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0728 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(SelRangeChqNumType.class, 
+2016-07-14 15:48:57.0728 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0729 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(SelRangeCurAmtType.class, 
+2016-07-14 15:48:57.0729 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0729 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(SelRangeDtType.class, 
+2016-07-14 15:48:57.0729 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0729 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(StatusType$AdditionalStatus.class, 
+2016-07-14 15:48:57.0729 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0729 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(StatusType.class, 
+2016-07-14 15:48:57.0730 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0730 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(TrnFiltersType.class, 
+2016-07-14 15:48:57.0730 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0730 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0730 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PostTransformBLSample.class, 
+2016-07-14 15:48:57.0730 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0731 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PreTransformBLSample.class, 
+2016-07-14 15:48:57.0731 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0731 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(PreTransformCTM.class, 
+2016-07-14 15:48:57.0731 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0731 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(RequestCobolTransform.class, 
+2016-07-14 15:48:57.0732 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0732 main...........                             { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ResponseCobolTransform.class, 
+2016-07-14 15:48:57.0732 main...........                             } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0732 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0732 main...........                         } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0733 main...........                         { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\cobolTransform, 
+2016-07-14 15:48:57.0733 main...........                           { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\cobolTransform\transform, 
+2016-07-14 15:48:57.0733 main...........                             { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\classes\com\anz\cobolTransform\transform\pojo, 
+2016-07-14 15:48:57.0734 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMReq$InputHeader.class, 
+2016-07-14 15:48:57.0734 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0734 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMReq$SecondaryHeader.class, 
+2016-07-14 15:48:57.0735 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0735 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMReq$ServiceRequestMsg.class, 
+2016-07-14 15:48:57.0735 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0735 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMReq.class, 
+2016-07-14 15:48:57.0735 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0736 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMRsp$OutputHeader.class, 
+2016-07-14 15:48:57.0736 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0736 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMRsp$SecondaryHdr.class, 
+2016-07-14 15:48:57.0736 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0736 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMRsp$ServiceResponseMsg$OutputDetails.class, 
+2016-07-14 15:48:57.0737 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0737 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMRsp$ServiceResponseMsg.class, 
+2016-07-14 15:48:57.0737 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0737 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInqCTMRsp.class, 
+2016-07-14 15:48:57.0737 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0738 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(InputHTTPHeaders.class, 
+2016-07-14 15:48:57.0738 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0738 main...........                               { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(ObjectFactory.class, 
+2016-07-14 15:48:57.0738 main...........                               } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0738 main...........                             } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0739 main...........                           } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0739 main...........                         } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0739 main...........                       } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0739 main...........                     } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0739 main...........                   } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0739 main...........                   { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\maven-archiver, 
+2016-07-14 15:48:57.0740 main...........                     { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(pom.properties, 
+2016-07-14 15:48:57.0740 main...........                     } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0740 main...........                   } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0740 main...........                   { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\maven-status, 
+2016-07-14 15:48:57.0741 main...........                     { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\maven-status\maven-compiler-plugin, 
+2016-07-14 15:48:57.0741 main...........                       { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\maven-status\maven-compiler-plugin\compile, 
+2016-07-14 15:48:57.0742 main...........                         { com.ibm.broker.config.appdev.BARInternalZip.includeDependency(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-java, target\maven-status\maven-compiler-plugin\compile\default-compile, 
+2016-07-14 15:48:57.0742 main...........                           { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(createdFiles.lst, 
+2016-07-14 15:48:57.0742 main...........                           } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0742 main...........                           { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(inputFiles.lst, 
+2016-07-14 15:48:57.0743 main...........                           } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0743 main...........                         } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0743 main...........                       } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0743 main...........                     } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0743 main...........                   } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0743 main...........                 } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() true
+2016-07-14 15:48:57.0743 main...........               } com.ibm.broker.config.appdev.BARInternalZip.includeDependency() false
+2016-07-14 15:48:57.0743 main...........               { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1866, inserts=[AcctTrnInq-java])
+2016-07-14 15:48:57.0744 main...........                 { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1866)
+2016-07-14 15:48:57.0744 main...........                 } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0744 main...........                 { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0744 main...........                 } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0744 main...........               } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0745 main...........               { com.ibm.broker.config.appdev.BARUtil.zipEntryExists(java.util.zip.ZipOutputStream@a8e540a0, AcctTrnInq-lib, 
+2016-07-14 15:48:57.0745 main...........               } com.ibm.broker.config.appdev.BARUtil.zipEntryExists() false
+2016-07-14 15:48:57.0745 main...........               { com.ibm.broker.config.appdev.DotProject.parse(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib\.project, 
+2016-07-14 15:48:57.0745 main...........                 { com.ibm.broker.config.appdev.BARUtil.readFileAsString(C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-lib\..\AcctTrnInq-lib\.project, 
+2016-07-14 15:48:57.0746 main...........                 } com.ibm.broker.config.appdev.BARUtil.readFileAsString() <?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>AcctTrnInq-lib</name>
+	<comment></comment>
+	<projects>
+		<project>AcctTrnInq-java</project>
+		<project>AcctTrnInq-lib</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.ibm.etools.mft.applib.applibbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.applib.applibresourcevalidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.connector.policy.ui.PolicyBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.connector.ui.editor.connectorServiceBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.connector.ui.editor.connectorEventBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.uri.sharedlibbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.applib.mbprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.msg.validation.dfdl.mlibdfdlbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.adapters.adapterbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.sca.scabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.msg.validation.dfdl.mbprojectresourcesbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.esql.lang.esqllangbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.map.builder.mslmappingbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.msgflowxsltbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.flow.msgflowbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.decision.service.ui.decisionservicerulebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.pattern.capture.PatternBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.msg.validation.dfdl.dfdlqnamevalidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.bar.ext.barbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.unittest.ui.TestCaseBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.mft.json.builder.JSONBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.ibm.etools.msgbroker.tooling.libraryNature</nature>
+		<nature>com.ibm.etools.msgbroker.tooling.messageBrokerProjectNature</nature>
+		<nature>com.ibm.etools.msgbroker.tooling.sharedLibraryNature</nature>
+		<nature>com.ibm.etools.mft.bar.ext.barnature</nature>
+	</natures>
+</projectDescription>
+
+2016-07-14 15:48:57.0756 main...........                 i: The .project file contains the nature: com.ibm.etools.msgbroker.tooling.libraryNature
+2016-07-14 15:48:57.0757 main...........                 i: The .project file contains the nature: com.ibm.etools.msgbroker.tooling.messageBrokerProjectNature
+2016-07-14 15:48:57.0757 main...........                 i: The .project file contains the nature: com.ibm.etools.msgbroker.tooling.sharedLibraryNature
+2016-07-14 15:48:57.0757 main...........                 i: The .project file contains the nature: com.ibm.etools.mft.bar.ext.barnature
+2016-07-14 15:48:57.0757 main...........               } com.ibm.broker.config.appdev.DotProject.parse()
+2016-07-14 15:48:57.0757 main...........               { com.ibm.broker.config.appdev.BARInternalZip.save()
+2016-07-14 15:48:57.0760 main...........                 { com.ibm.broker.config.appdev.BARUtil.addZipEntry(java.util.zip.ZipOutputStream@a8e540a0, AcctTrnInq-lib, 
+2016-07-14 15:48:57.0760 main...........                 } com.ibm.broker.config.appdev.BARUtil.addZipEntry()
+2016-07-14 15:48:57.0760 main...........               } com.ibm.broker.config.appdev.BARInternalZip.save() true
+2016-07-14 15:48:57.0760 main...........               { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1871, inserts=[AcctTrnInq-lib.shlibzip])
+2016-07-14 15:48:57.0760 main...........                 { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1871)
+2016-07-14 15:48:57.0760 main...........                 } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0760 main...........                 { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0760 main...........                 } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0761 main...........               } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0761 main...........               { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1871I: Shared library file 'AcctTrnInq-lib.shlibzip' successfully added to the BAR file., 
+2016-07-14 15:48:57.0761 main...........               } com.ibm.broker.config.appdev.BARLog.removeMessageId() Shared library file 'AcctTrnInq-lib.shlibzip' successfully added to the BAR file.
+2016-07-14 15:48:57.0761 main...........               { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1861, inserts=[0.119])
+2016-07-14 15:48:57.0761 main...........                 { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1861)
+2016-07-14 15:48:57.0761 main...........                 } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0761 main...........                 { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0761 main...........                 } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:48:57.0762 main...........               } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0762 main...........               { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1861I: Elapsed time: '0.119' second(s)., 
+2016-07-14 15:48:57.0762 main...........               } com.ibm.broker.config.appdev.BARLog.removeMessageId() Elapsed time: '0.119' second(s).
+2016-07-14 15:48:57.0762 main...........             } com.ibm.broker.config.appdev.ShlibZip.Constructor()
+2016-07-14 15:48:57.0762 main...........           } com.ibm.broker.config.appdev.FlowRendererInternalBAR.zipDirectory()
+2016-07-14 15:48:57.0762 main...........           { com.ibm.broker.config.appdev.BARLog.toByteArray()
+2016-07-14 15:48:57.0762 main...........           } com.ibm.broker.config.appdev.BARLog.toByteArray() [B@5458675b
+2016-07-14 15:48:57.0763 main...........           { com.ibm.broker.config.appdev.BARLog.toByteArray()
+2016-07-14 15:48:57.0763 main...........           } com.ibm.broker.config.appdev.BARLog.toByteArray() [B@ed4a7a94
+2016-07-14 15:48:57.0763 main...........         } com.ibm.broker.config.appdev.FlowRendererInternalBAR.toByteArray() [B@6b419e10
+2016-07-14 15:48:57.0763 main...........       } com.ibm.broker.config.appdev.FlowRendererInternalBAR.toInputStream() java.io.ByteArrayInputStream@4098af66
+2016-07-14 15:48:57.0765 main...........       { com.ibm.broker.config.appdev.BARUtil.setIncludeAllArtifacts(false, 
+2016-07-14 15:48:57.0765 main...........       } com.ibm.broker.config.appdev.BARUtil.setIncludeAllArtifacts()
+2016-07-14 15:48:57.0769 main...........       { com.ibm.broker.config.appdev.BARUtil.isFlow(AcctTrnInq-lib.shlibzip, 
+2016-07-14 15:48:57.0769 main...........       } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0769 main...........       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(AcctTrnInq-lib.shlibzip, 
+2016-07-14 15:48:57.0769 main...........       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() false
+2016-07-14 15:48:57.0769 main...........       { com.ibm.broker.config.appdev.BARUtil.isSupportedZip(AcctTrnInq-lib.shlibzip, 
+2016-07-14 15:48:57.0769 main...........       } com.ibm.broker.config.appdev.BARUtil.isSupportedZip() true
+2016-07-14 15:48:57.0770 main...........       { com.ibm.broker.config.appdev.BARUtil.isFlow(   library.descriptor, 
+2016-07-14 15:48:57.0770 main...........       } com.ibm.broker.config.appdev.BARUtil.isFlow() false
+2016-07-14 15:48:57.0770 main...........       { com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact(   library.descriptor, 
+2016-07-14 15:48:57.0770 main...........       } com.ibm.broker.config.appdev.BARUtil.isSupportedArtifact() true
+2016-07-14 15:48:57.0770 main...........     } com.ibm.broker.config.appdev.FlowRendererInternalBAR.write()
+2016-07-14 15:48:57.0770 main...........   } com.ibm.broker.config.appdev.FlowRendererBAR.write()
+2016-07-14 15:48:57.0770 main...........   { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1863, inserts=null)
+2016-07-14 15:48:57.0771 main...........     { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1863)
+2016-07-14 15:48:57.0771 main...........     } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:48:57.0771 main...........   } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:48:57.0771 main........... } com.ibm.broker.config.appdev.CommandProcessor.packageBAR()
+2016-07-14 15:48:57.0771 main........... w: Warning: Logger null could not be instantiated with parameters null
+2016-07-14 15:49:20.0788 main........... { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1850, inserts=null)
+2016-07-14 15:49:20.0788 main...........   { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1850)
+2016-07-14 15:49:20.0788 main...........   } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:49:20.0788 main........... } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:49:20.0788 main........... { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1850I: Running command: mqsipackagebar, 
+2016-07-14 15:49:20.0788 main........... } com.ibm.broker.config.appdev.BARLog.removeMessageId() Running command: mqsipackagebar
+2016-07-14 15:49:20.0788 main........... { com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail(bipNumber=1851, inserts=[-a C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\target\AcctTrnInq-app-0.0.0.1-SNAPSHOT.bar -w C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\.. -k AcctTrnInq-app -v C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\target\packagebartrace.txt])
+2016-07-14 15:49:20.0789 main...........   { com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue(bipNumber=1851)
+2016-07-14 15:49:20.0789 main...........   } com.ibm.broker.config.appdev.MessageUtil.getMessageFromCatalogue()
+2016-07-14 15:49:20.0789 main...........   { com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:49:20.0789 main...........   } com.ibm.broker.config.appdev.MessageUtil.insertInserts()
+2016-07-14 15:49:20.0789 main........... } com.ibm.broker.config.appdev.MessageUtil.getLocalisedMessageDetail()
+2016-07-14 15:49:20.0789 main........... { com.ibm.broker.config.appdev.BARLog.removeMessageId(BIP1851I: Command arguments: '-a C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\target\AcctTrnInq-app-0.0.0.1-SNAPSHOT.bar -w C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\.. -k AcctTrnInq-app -v C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\target\packagebartrace.txt', 
+2016-07-14 15:49:20.0789 main........... } com.ibm.broker.config.appdev.BARLog.removeMessageId() Command arguments: '-a C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\target\AcctTrnInq-app-0.0.0.1-SNAPSHOT.bar -w C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\.. -k AcctTrnInq-app -v C:\Bhupathi\git\AcctTrnInq-parent\AcctTrnInq-app\target\packagebartrace.txt'

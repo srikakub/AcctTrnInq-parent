@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" xmlns:dfdlCobolFmt="http://www.ibm.com/dfdl/CobolDataDefinitionFormat" xmlns:ibmDfdlExtn="http://www.ibm.com/dfdl/extensions" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+  <xsd:import namespace="http://www.ibm.com/dfdl/CobolDataDefinitionFormat" schemaLocation="../IBMdefined/CobolDataDefinitionFormat.xsd"/>
+  <xsd:complexType name="AcctTrnInqCTMReq">
+    <xsd:sequence>
+      <xsd:element default=" " dfdl:length="24" name="ServiceRequest">
+        <xsd:annotation>
+          <xsd:appinfo source="http://www.wsadie.com/appinfo">
+            <initialValue kind="SPACE"/>
+          </xsd:appinfo>
+          <xsd:documentation>PIC X(24) display</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="dfdlCobolFmt:PICX__string">
+            <xsd:maxLength value="24"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element dfdl:lengthKind="implicit" name="InputHeader">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element default=" " dfdl:length="24" name="ServiceRequest2">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(24) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="24"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="VersionNumber">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(2) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="EffectiveDate">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="InitiatedDate">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="InitiatedTime">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="5" dfdl:textNumberPattern="00000+" name="InitiatingCo">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(5) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="8" name="Operator">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="8"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="6" dfdl:textNumberPattern="000000+" name="OperatorBranch">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(6) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="8" name="WorkstationId">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="8"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="3" name="OriginatingApplication">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(3) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="3"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element dfdl:lengthKind="implicit" name="SecondaryHeader">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element default=" " dfdl:length="3" name="ProcessingApplication">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(3) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="3"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="23" name="AccountNumber">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(23) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="23"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="23" name="RegistrationNumber">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(23) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="23"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="LinkageNumber">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(2) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element dfdl:lengthKind="implicit" name="ServiceRequestMsg">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="NoToRetrieve">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(2) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="6" dfdl:textNumberPattern="000000+" name="NextTransactionStart">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(6) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="TransactionProcessDate">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AcctTrnInqCTMRsp">
+    <xsd:sequence>
+      <xsd:element default=" " dfdl:length="24" name="ServiceName">
+        <xsd:annotation>
+          <xsd:appinfo source="http://www.wsadie.com/appinfo">
+            <initialValue kind="SPACE"/>
+          </xsd:appinfo>
+          <xsd:documentation>PIC X(24) display</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="dfdlCobolFmt:PICX__string">
+            <xsd:maxLength value="24"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element dfdl:lengthKind="implicit" name="OutputHeader">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element default=" " dfdl:length="24" name="ServiceResponse">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(24) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="24"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="VersionNumber">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(2) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="DataLength">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="3" dfdl:textNumberPattern="000+" name="ServiceResultCode">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(3) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="40" name="ErroMessage">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(40) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="40"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="ConditionCode">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(8) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element dfdl:lengthKind="implicit" name="SecondaryHdr">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element default=" " dfdl:length="3" name="ProcessingApplication">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(3) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="3"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="23" name="AccountNumber">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(23) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="23"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default=" " dfdl:length="23" name="RegistrationNumber">
+              <xsd:annotation>
+                <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                  <initialValue kind="SPACE"/>
+                </xsd:appinfo>
+                <xsd:documentation>PIC X(23) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                  <xsd:maxLength value="23"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="LinkageNumber">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(2) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element dfdl:lengthKind="implicit" name="ServiceResponseMsg">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="6" dfdl:textNumberPattern="000000+" name="NextTransactionStart">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(6) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="999999"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="NumberOfTransactions">
+              <xsd:annotation>
+                <xsd:documentation>PIC 9(2) display</xsd:documentation>
+              </xsd:annotation>
+              <xsd:simpleType>
+                <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                  <xsd:minInclusive value="0"/>
+                  <xsd:maxInclusive value="99"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+            <xsd:element dfdl:lengthKind="implicit" dfdl:occursCount="{/AcctTrnInqCTMRsp/ServiceResponseMsg/NumberOfTransactions}" dfdl:occursCountKind="expression" maxOccurs="50" minOccurs="50" name="OutputDetails">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="TransactionDateV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(8) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="99999999"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="6" dfdl:textNumberPattern="000000+" name="TransactionTimeV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(6) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="999999"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default=" " dfdl:length="2" name="TransactionSRCECODEV2">
+                    <xsd:annotation>
+                      <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                        <initialValue kind="SPACE"/>
+                      </xsd:appinfo>
+                      <xsd:documentation>PIC X(2) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                        <xsd:maxLength value="2"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default=" " dfdl:length="20" name="TransactionSRCEV2">
+                    <xsd:annotation>
+                      <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                        <initialValue kind="SPACE"/>
+                      </xsd:appinfo>
+                      <xsd:documentation>PIC X(20) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                        <xsd:maxLength value="20"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="13" dfdl:textNumberPattern="00000000000V00+" name="TransactionAMTV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(11)V9(2) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__decimal">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="99999999999.99"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default=" " dfdl:length="1" name="TransactionCRINDV2">
+                    <xsd:annotation>
+                      <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                        <initialValue kind="SPACE"/>
+                      </xsd:appinfo>
+                      <xsd:documentation>PIC X display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                        <xsd:maxLength value="1"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="2" dfdl:textNumberPattern="00+" name="TransactionTypeCodeV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(2) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="99"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default=" " dfdl:length="20" name="TransactionTypeV2">
+                    <xsd:annotation>
+                      <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                        <initialValue kind="SPACE"/>
+                      </xsd:appinfo>
+                      <xsd:documentation>PIC X(20) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                        <xsd:maxLength value="20"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="4" dfdl:textNumberPattern="0000+" name="TransactionBranchV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(4) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__short">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="9999"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default=" " dfdl:length="40" name="TransactionNarrativeV2">
+                    <xsd:annotation>
+                      <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                        <initialValue kind="SPACE"/>
+                      </xsd:appinfo>
+                      <xsd:documentation>PIC X(40) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                        <xsd:maxLength value="40"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="13" dfdl:textNumberPattern="0000000000000+" name="TransactionSerialNoV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(13) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__long">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="9999999999999"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default=" " dfdl:length="4" name="TransactionSourceV2">
+                    <xsd:annotation>
+                      <xsd:appinfo source="http://www.wsadie.com/appinfo">
+                        <initialValue kind="SPACE"/>
+                      </xsd:appinfo>
+                      <xsd:documentation>PIC X(4) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PICX__string">
+                        <xsd:maxLength value="4"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                  <xsd:element default="0" dfdl:decimalSigned="no" dfdl:length="8" dfdl:textNumberPattern="00000000+" name="TransactionEffDateV2">
+                    <xsd:annotation>
+                      <xsd:documentation>PIC 9(8) display</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+                      <xsd:restriction base="dfdlCobolFmt:PIC9-Display-Zoned__int">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="99999999"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:element>
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:annotation>
+    <xsd:appinfo source="http://www.ogf.org/dfdl/">
+      <dfdl:format binaryFloatRep="{$dfdl:binaryFloatRep}" byteOrder="{$dfdl:byteOrder}" encoding="{$dfdl:encoding}" ignoreCase="yes" leadingSkip="0" occursCountKind="fixed" ref="dfdlCobolFmt:CobolDataFormat" textNumberPadCharacter="0" textStringJustification="left" textStringPadCharacter="%SP;" textZonedSignStyle="asciiStandard" trailingSkip="0"/>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:annotation>
+    <xsd:documentation>
+	This XSD was created by importing COBOL copybook.
+
+	Source file:	AcctTrnInqCTM.cpy
+
+	Import options:
+		CODEPAGE=ISO-8859-1
+		ENDIAN=Little
+		EXTENSION_CBL=FP
+		EXTENSION_CCP=FP
+		EXTENSION_COB=FP
+		EXTENSION_CPY=DS
+		EXT_DECIMAL_SIGN=ASCII
+		FLOATING_POINT_FORMAT=0
+		NSYMBOL=NATIONAL
+		NUMPROC=PFD
+		PLATFORM_SELECTION=0
+		QUOTE=DOUBLE
+		REMOTE_ENDIAN=Little
+		TRUNC=STD
+		SCHEMA_TARGET_NAMESPACE_URI=null
+		CREATE_DEFAULT_VALUES_FROM_INITIAL_VALUES=true
+		CREATE_FACETS_FROM_LEVEL_88_VALUE_CLAUSES=false
+		PRESERVE_CASE_IN_VARIABLE_NAMES=true
+		CREATE_NULL_VALUES_FOR_FIELDS=false
+		NULL_CHARACTER_FOR_STRING=%SP; 
+		NULL_CHARACTER_FOR_NUMBER=%#r00; 
+		STRING_PADDING_CHARACTER=%SP;
+		NUMBER_PADDING_CHARACTER=0
+		DEFAULT_FOR_STRING= 
+		DEFAULT_FOR_NUMBER=0
+
+</xsd:documentation>
+  </xsd:annotation>
+  <xsd:element dfdl:lengthKind="implicit" ibmSchExtn:docRoot="true" name="AcctTrnInqCTMReq" type="AcctTrnInqCTMReq"/>
+  <xsd:element dfdl:lengthKind="implicit" ibmSchExtn:docRoot="true" name="AcctTrnInqCTMRsp" type="AcctTrnInqCTMRsp"/>
+</xsd:schema>
